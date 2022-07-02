@@ -1,10 +1,12 @@
-// An empty Prisma Schema with no models, perfect as a starting point for your own schema.
-
 datasource db {
-provider = "postgres"
-  url      = env("DATABASE_URL")
+    provider = "postgres"
+    url      = env("DATABASE_URL")
 }
 
 generator client {
-  provider = "prisma-client-js"
+    provider = "prisma-client-js"
+}
+
+model Example {
+    id String @id @default(cuid())
 }
