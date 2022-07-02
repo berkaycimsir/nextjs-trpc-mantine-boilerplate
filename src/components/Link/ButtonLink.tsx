@@ -4,7 +4,7 @@ import React from 'react';
 
 type Props = LinkProps & {
   text: string;
-  buttonProps: Omit<ButtonProps<SharedButtonProps>, 'component'> & {
+  buttonProps?: Omit<ButtonProps<SharedButtonProps>, 'component'> & {
     component?: string;
   };
 };

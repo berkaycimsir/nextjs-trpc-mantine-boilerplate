@@ -127,16 +127,32 @@ const Home: NextPage = () => {
           }
         >
           <List.Item>
-            <Text>Nextjs</Text>
+            <TextLink
+              textProps={{ underline: true }}
+              text="Nextjs"
+              href="https://nextjs.org"
+            />
           </List.Item>
           <List.Item>
-            <Text>tRPC</Text>
+            <TextLink
+              textProps={{ underline: true }}
+              text="tRPC"
+              href="https://trpc.io"
+            />
           </List.Item>
           <List.Item>
-            <Text>Typescript</Text>
+            <TextLink
+              textProps={{ underline: true }}
+              text="Typescript"
+              href="https://typescriptlang.org"
+            />
           </List.Item>
           <List.Item>
-            <Text>Mantine</Text>
+            <TextLink
+              textProps={{ underline: true }}
+              text="Mantine"
+              href="https://mantine.dev"
+            />
           </List.Item>
         </List>
 
@@ -164,13 +180,13 @@ const Home: NextPage = () => {
         </Box>
 
         <ButtonLink
-          href="/sign-in"
+          href="https://github.com/berkaycimsir/nextjs-trpc-mantine-boilerplate"
           text="Button Link Example"
           buttonProps={{ color: 'indigo', mt: 'lg' }}
         />
 
         <TextLink
-          href="/sign-in"
+          href="https://github.com/berkaycimsir/nextjs-trpc-mantine-boilerplate"
           text="Text Link Example"
           textProps={{ color: 'indigo', ml: 'lg' }}
         />
